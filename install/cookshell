@@ -1,0 +1,2 @@
+cook.allow.logging
+sudo mv bin/gtkeditor /usr/local/bin

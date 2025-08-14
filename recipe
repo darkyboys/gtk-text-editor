@@ -1,0 +1,16 @@
+@show_logs true
+
+global:
+    pkg_in = "gtk4"
+    compiler = "gcc"
+    compiler_arguments = "-fpermissive -Wno-deprecated-declarations -Wno-write-strings"
+
+src/main.c:
+    out = "gtkeditor"
+    combine = [
+        "src/closeDialog.c",
+        "src/fileChooser.c",
+        "src/save.c",
+        "src/textView.c",
+        "src/titleBar.c"
+    ]
